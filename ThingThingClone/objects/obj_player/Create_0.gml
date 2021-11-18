@@ -1,7 +1,7 @@
 /// @description Input declare and Randomize Gun
 randomize();
 maxHP = 50;
-HP = 1;
+HP = maxHP;
 
 hsp = 0;
 vsp = 0;
