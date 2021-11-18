@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.8,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_m4_fire.wav",
-  "duration": 2.746361,
+  "duration": 2.741361,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

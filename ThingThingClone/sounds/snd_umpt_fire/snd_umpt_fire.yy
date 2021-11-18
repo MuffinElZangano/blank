@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.7,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_umpt_fire.wav",
-  "duration": 1.80599809,
+  "duration": 1.800998,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

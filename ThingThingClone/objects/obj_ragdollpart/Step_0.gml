@@ -3,26 +3,30 @@
 var grav = 0.2;
 var bouncedecay = 0.25;
 
-yspd += grav;
-if(place_meeting(x+xspd,y,obj_solid)){
-	while !place_meeting(x+sign(xspd),y,obj_solid){
-		x+=sign(xspd);
+    //Horizontal
+	if(tile_meeting(x+xspd,y,"collision")){
+		repeat(abs(xspd)){
+			if(!tile_meeting(x+sign(xspd),y,"collision")){
+				x += sign(xspd)} else{break;}
+			}
+		xspd *= -bouncedecay;
 	}
-	//BOUNCE
-	xspd *= -bouncedecay;
-}
 
-if(place_meeting(x,y+yspd,obj_solid)){
-	while !place_meeting(x,y+sign(yspd),obj_solid){
-		y+=sign(yspd);
-	}
-	//BOUNCE
-	yspd *= -bouncedecay;
-}
+    //Vertical
+	if(tile_meeting(x,y+yspd,"collision")){
+		repeat(abs(yspd)){
+			if(!tile_meeting(x,y+sign(yspd),"collision")){
+				y += sign(yspd)} else{break;}
+			}
+		yspd *= -bouncedecay;
+		}else{
+		yspd += grav;
+		}
 
-if(place_meeting(x,y+1,obj_solid)){
+if(tile_meeting(x,y+1,"collision")){
 	xspd*=0.8;
 }
+image_angle-=xspd;
 
 if(xspd=0){startfade--;}
 if(startfade<=0){image_alpha-=0.025;}
@@ -30,4 +34,3 @@ if(image_alpha<=0)instance_destroy();
 
 x+=xspd;
 y+=yspd;
-image_angle-=xspd;

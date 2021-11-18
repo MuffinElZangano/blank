@@ -1,21 +1,27 @@
+if(obj_player.HP > 0){
 target_x = instance_nearest(x,y,obj_player).x;
 target_y = instance_nearest(x,y,obj_player).y;
+}
 
 var hmove=0;
+var sight_range = 256;
 
-if(collision_circle(x,y,164,obj_player,0,1)){
-	if(target_x > x) hmove = 1; else
-	if(target_x < x) hmove = -1;
+if(collision_circle(x,y,sight_range,obj_player,0,1)){
 	var attack_range;
 	switch(weapon){
 		case spr_melee: attack_range = 32; break;
-		case spr_pistols: attack_range = 96; break;
+		case spr_pistols: attack_range = 136; break;
+		case spr_rifles: attack_range = 128; break;
+		case spr_shotguns: attack_range = 96; break;
 	}
-	if(collision_circle(x,y,attack_range,obj_player,0,1)){
-		if(input_attack = false){
+	if(collision_circle(x,y,attack_range,obj_player,0,1) && obj_player.HP > 0){
+		if(input_attack = false && mag > 0){
 			input_attack = true;
 			alarm[0] = 15;
 		}
+	}else{
+		if(target_x > x+36) hmove = 1; else
+		if(target_x < x-36) hmove = -1;
 	}
 }
 
@@ -28,26 +34,33 @@ if (hmove!=0){
 } else {
     hsp+=(spd*hmove-hsp)*decceleration;
 }
-if(vsp=0){walk_dir+=hsp*(-4)}; //This is to animate the feet
+if(vsp >= 0){
+	walk_dir += hsp*(-4)
+	}; //This is to animate the feet
 vsp = vsp + grav;
 
-//Collisions
-if(place_meeting(x+hsp,y,obj_solid)){
-	while(!place_meeting(x+sign(hsp),y,obj_solid)){
-		x = x + sign(hsp);
-	}
+//Horizontal
+if(tile_meeting(x+hsp,y,"collision")){
+	repeat(abs(hsp)){
+		if(!tile_meeting(x+sign(hsp),y,"collision")){
+			x += sign(hsp)} else{break;}
+		}
 	hsp = 0;
-	input_jump=true;
-}else{input_jump=false;}
-
-if(place_meeting(x,y+vsp,obj_solid)){
-	while(!place_meeting(x,y+sign(vsp),obj_solid)){
-		y = y + sign(vsp);
-	}
-	vsp = 0;
+	input_jump = true;
+}else{
+	input_jump = false;
 }
 
-if(place_meeting(x,y+1,obj_solid) && input_jump){
+//Vertical
+if(tile_meeting(x,y+vsp,"collision")){
+	repeat(abs(vsp)){
+		if(!tile_meeting(x,y+sign(vsp),"collision")){
+			y += sign(vsp)} else{break;}
+		}
+		vsp = 0;
+	}
+
+if(tile_meeting(x,y+1,"collision") && input_jump){
 	vsp = -4;
 }
 
