@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_exclamation","path":"sprites/spr_exclamation/spr_exclamation.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_exclamation",
     "tags": [],
     "resourceType": "GMSequence",

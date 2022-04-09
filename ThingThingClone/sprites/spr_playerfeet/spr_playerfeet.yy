@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerfeet","path":"sprites/spr_playerfeet/spr_playerfeet.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerfeet",
     "tags": [],
     "resourceType": "GMSequence",

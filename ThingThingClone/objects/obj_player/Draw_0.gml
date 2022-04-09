@@ -2,7 +2,7 @@
 //---------- Get mouse direction and flip the sprite
 var mouse_dir = point_direction(x,y,mouse_x,mouse_y);
 var flipped = (mouse_x > x)*2-1;
-//---------- If feet cycle below 0, reset to 360 (This controls the feet animation)
+//---------- If feet cycle is below 0, reset to 360 (This controls the feet animation)
 if(walk_dir<0){
 	walk_dir = 360;
 	}
@@ -116,7 +116,7 @@ switch(weapon){
 	switch(animStage){
 		case 1:
 			if(wep_rotation<16){
-			wep_rotation+=4;
+			wep_rotation += 4+(gun_cooldown/10);
 			}else{
 			animStage = 2;
 			}
@@ -124,7 +124,7 @@ switch(weapon){
 	//AnimStage 2 is lowering the gun back down.	
 		case 2:
 			if(wep_rotation>0){
-			wep_rotation-=4;
+			wep_rotation -= 4+(gun_cooldown/10);
 			}else{
 			hand_subimg = 1;
 			animStage = 0;

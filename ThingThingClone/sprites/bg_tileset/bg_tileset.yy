@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"bg_tileset","path":"sprites/bg_tileset/bg_tileset.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "bg_tileset",
     "tags": [],
     "resourceType": "GMSequence",

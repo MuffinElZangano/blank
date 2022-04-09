@@ -3,7 +3,7 @@ draw_sprite_ext(spr_healthbar,0,20,10,1,1,0,c_white,1);
 draw_sprite_part(spr_healthbar,1,0,0,(HP/maxHP)*32,16,20,10);
 draw_sprite_ext(spr_healthcross,((HP/maxHP)*3),10,10,1,1,0,c_white,1);
 draw_set_halign(fa_right);
-draw_text_shadow(360,10,"Score: "+string(global.score));
+//draw_text_shadow(360,10,"Score: "+string(global.score));
 draw_set_halign(fa_left);
 //Draw Equipped Weapon below healthbar
 var rot = 45;

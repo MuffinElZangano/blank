@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_itemspawner","path":"sprites/spr_itemspawner/spr_itemspawner.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_itemspawner",
     "tags": [],
     "resourceType": "GMSequence",

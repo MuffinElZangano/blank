@@ -22,7 +22,7 @@ if (hmove!=0){
 
 //Only jump, and animate feet if theres a tile below
 if(tile_meeting(x,y+1,"collision")){
-	walk_dir+=hsp*(-4)
+	walk_dir+=hsp*(-6)
 	if(input_jump)
 	{
 		vsp = -4.4;
@@ -35,7 +35,8 @@ if(tile_meeting(x,y+1,"collision")){
 //Collisions
 TileCollisions();
 
-if(mag <= max_mag && input_reload && alarm[2]==-1 && weapon!=spr_melee){
+if(mag <= max_mag && input_reload && alarm[2]==-1 
+	&& weapon!=spr_melee && mag<max_mag){
 	alarm[2] = reload_time;
 	audio_play_sound(snd_reload,0,0);
 }

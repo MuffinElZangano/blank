@@ -1,4 +1,4 @@
-/// @description Destroy itself;PLACEHOLDER
+/// @description Destroy itself
 if(other.owner!=id){
 	HP-= other.owner.dmg;
 	flash = 1;
@@ -13,6 +13,6 @@ if(HP<=0){
 	var wep = instance_create_depth(x,y,depth,obj_dropweapon); wep.sprite_index = weapon; wep.image_index = subweapon; wep.ammo_left = mag;
 	image_alpha = 0;
 	}
-}
-
+	
 with(other)instance_destroy();
+}

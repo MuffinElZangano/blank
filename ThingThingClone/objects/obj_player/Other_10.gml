@@ -1,4 +1,4 @@
-/// @description Switch weapon mag
+/// @description Switch weapon & mag
 //Define Mag and Weapon Switch
 switch(weapon){	
 	case spr_melee:

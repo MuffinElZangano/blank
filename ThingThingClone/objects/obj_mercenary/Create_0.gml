@@ -10,12 +10,14 @@ spd = 2;
 weapon = spr_melee;
 subweapon = irandom_range(0,3);
 
-script_execute(
-	choose(
+if(instance_exists(obj_game_horde)){
+	script_execute(
+		choose(
 		choose_pistol,
 		choose_rifle,
 		choose_shotgun)
-);
+	);
+}
 can_attack = true;
 can_take_melee_damage = true;
 gun_cooldown = room_speed/1; 

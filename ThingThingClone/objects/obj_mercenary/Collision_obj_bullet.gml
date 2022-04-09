@@ -23,10 +23,8 @@ if(HP<=0){
 		var medkit = instance_create_depth(x,y,depth,obj_item);
 		medkit.image_index = choose(1,2);
 	}
-	global.score += 100;
+	//global.score += 100;
 	instance_destroy();
 }
 #endregion
 }
-
-with(other)instance_destroy();

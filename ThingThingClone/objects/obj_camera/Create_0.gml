@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-//draw_set_font(PixelFont2);
+draw_set_font(m5x7);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 view_width=1920/5; view_height=1080/5;

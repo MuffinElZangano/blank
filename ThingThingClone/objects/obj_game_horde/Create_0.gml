@@ -1,5 +1,4 @@
 /// @description Horde
-draw_set_font(m5x7);
 _round = 0;
 enemy_quota = 1;
 enemies_left = 2;

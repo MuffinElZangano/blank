@@ -31,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_game",
+  "name": "obj_game_horde",
   "tags": [],
   "resourceType": "GMObject",
 }

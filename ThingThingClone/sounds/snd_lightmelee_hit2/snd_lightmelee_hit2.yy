@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.7,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_lightmelee_hit2.wav",
-  "duration": 0.491236,
+  "duration": 0.486236,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

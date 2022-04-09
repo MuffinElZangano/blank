@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_round","path":"sprites/spr_round/spr_round.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_round",
     "tags": [],
     "resourceType": "GMSequence",

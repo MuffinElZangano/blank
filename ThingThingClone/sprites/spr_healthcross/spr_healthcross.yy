@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_healthcross","path":"sprites/spr_healthcross/spr_healthcross.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_healthcross",
     "tags": [],
     "resourceType": "GMSequence",

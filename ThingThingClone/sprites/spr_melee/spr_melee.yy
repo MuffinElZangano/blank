@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_melee","path":"sprites/spr_melee/spr_melee.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_melee",
     "tags": [],
     "resourceType": "GMSequence",

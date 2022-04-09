@@ -23,8 +23,8 @@ gun_cooldown = room_speed/1;
 reload_time = room_speed*2;
 bullet_spread = 0;
 
-head = irandom_range(0,3);
-torso = irandom_range(0,3);
+head = irandom_range(0,5);
+torso = irandom_range(0,5);
 feet = irandom_range(0,2);
 
 walk_x = 0;
