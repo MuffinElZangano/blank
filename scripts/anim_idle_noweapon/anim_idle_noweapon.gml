@@ -2,12 +2,12 @@
 
 //IDlE tiene 9 Frames
 function anim_idle_noweapon(){
-	FRAME_RATE_manos = 1/5;
-	FRAME_MAX_manos = 9;
+	FRAME_RATE_m = 1/5;
+	FRAME_MAX_m = 9;
 	
-	if(moveX!=0) animacion_manos = "walk";
+	if(moveX!=0) animacion_m = "walk_noweapon";
 	
-	switch(FRAME_manos){
+	switch(FRAME_m){
 		case 0: //FRAME 0
 			manoL_x	 = -8;
 			manoL_y  =  6;

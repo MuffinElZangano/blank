@@ -12,14 +12,11 @@ switch(animacion){
 
 switch(arma_equipada){
 	case -1:
-		switch(animacion_manos){
+		switch(animacion_m){
 			case "idle_noweapon":	   anim_idle_noweapon(); break;
 			//case "walk_noweapon":      anim_walk_noweapon(); break;
 		}
 }
 
-if(FRAME < FRAME_MAX){
-	FRAME += FRAME_RATE;
-}else{
-	FRAME = 0;
-}
+FRAME = clamp_loop(FRAME,FRAME_MAX,FRAME_RATE);
+FRAME_m = clamp_loop(FRAME_m,FRAME_MAX_m,FRAME_RATE_m);

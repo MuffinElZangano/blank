@@ -12,6 +12,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":0,},
     {"id":{"name":"oMainMenu","path":"objects/oMainMenu/oMainMenu.yy",},"order":2,},
+    {"id":{"name":"clamp_loop","path":"scripts/clamp_loop/clamp_loop.yy",},"order":3,},
     {"id":{"name":"text_button","path":"scripts/text_button/text_button.yy",},"order":1,},
     {"id":{"name":"player_init_parts","path":"scripts/player_init_parts/player_init_parts.yy",},"order":0,},
     {"id":{"name":"oGlobalGame","path":"objects/oGlobalGame/oGlobalGame.yy",},"order":3,},
