@@ -1,5 +1,15 @@
 /// @description Aparición de Jugador
 
+//Input y Control
+key_up    = ord("W")
+key_left  = ord("A")
+key_down  = ord("S")
+key_right = ord("D")
+
+moveX = 0;
+moveY = 0;
+moveSpeed = 2; //Placeholder, puede cambiar con Slows, trampas, etc.
+
 //Estas variables controlan la apariencia del jugador.
 ropa_cabeza = 0;
 ropa_manos	= 0;
@@ -12,6 +22,7 @@ vida_max	= 100;
 stamina		= 100;
 stamina_max	= 100;
 
+arma_equipada   = -1;
 arma_primaria	= -1;
 arma_secundaria = -1;
 arma_melee		= -1;
@@ -22,3 +33,20 @@ balas_escopeta	 = 0;
 balas_pistola	 = 0;
 granadas_1		 = 0;
 granadas_2		 = 0;
+
+//Variables de Animación
+animacion = "idle";
+animacion_manos = "idle_noweapon";
+_xscale = 1;
+
+//Estas variables controlan las animaciones para el cuerpo y los pies
+FRAME = 0;
+FRAME_RATE = 1;
+FRAME_MAX = 9;
+
+//Estas variables controlan las animaciones para las manos
+FRAME_manos = 0;
+FRAME_RATE_manos = 1;
+FRAME_MAX_manos = 9;
+
+player_init_parts();

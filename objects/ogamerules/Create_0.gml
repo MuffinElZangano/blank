@@ -1,5 +1,5 @@
 /// @description Definir reglas de juego iniciales
-switch(global.modes)
+/*switch(global.modes)
 {
-		
+		break;
 }
