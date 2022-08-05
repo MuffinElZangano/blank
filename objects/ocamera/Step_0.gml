@@ -15,7 +15,7 @@ if(instance_exists(oPlayer)){
 }
 
 if(keyboard_check_pressed(vk_f8)){
-	if(window_scale < 6 && (view_width*window_scale) < display_get_width()){
+	if(window_scale < 6 && (view_width*(window_scale+1)) < display_get_width()){
 		window_scale++;
 	}else{
 		window_scale = 1;
